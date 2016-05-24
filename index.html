@@ -8,8 +8,17 @@
 
 <h1>Wikipedia Viewer</h1>
 
-  <input type="button" onclick="location.href='https://en.wikipedia.org/wiki/Special:Random';" value="Surprise me!" />
+	<form action="" method="post">
+	    <div>
+	        <label for="name">What are you curious about today?</label>
+	        <input type="text" id="name" />
+	    </div>
+	    <div class="button">
+	        <button type="submit">Search it!</button>
+	    </div>
+	</form>
 
+	  <input type="button" onclick="location.href='https://en.wikipedia.org/wiki/Special:Random';" value="Surprise me!" />
 
 	<!-- Main JS -->
 	<script src="js/app.js"></script>

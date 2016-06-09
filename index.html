@@ -7,22 +7,16 @@
 <body>
 
 <h1>Wikipedia Viewer</h1>
+	<label for="formControl">What are you curious about today?</label>
+	<input type="text" id="searchTerm" class="formControl" />
 
-	<form action="" method="post">
-	    <div>
-	        <label for="formControl">What are you curious about today?</label>
-	        <input type="text" id="searchTerm" class="formControl" />
-	    </div>
-	    <div class="button">
-	        <button id="search" type="submit">Search it!</button>
-	    </div>
-	</form>
+	<button id="search" type="button">Search it!</button>
 
-	  <input type="button" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')" value="Surprise me!" />
+	<input type="button" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')" value="Surprise me!" />
 
-		<ul id="output">
+	<ul id="output">
 
-		</ul>
+	</ul>
 
 	<!-- JQuery -->
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>

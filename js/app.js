@@ -10,8 +10,9 @@
 $(document).ready(function(){
   $("#search").click(function(){
     var searchTerm = $("#searchTerm").val();
-      var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchTerm + "&format=json&callback=?";
+      var url = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + searchTerm + "&callback=?";
         //https://en.wikipedia.org/w/api.php?action=query&srsearch=
+        //action=query&list=search&format=json&srsearch=
       $.ajax({
         type: "GET",
         url: url,

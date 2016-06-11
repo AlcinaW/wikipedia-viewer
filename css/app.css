@@ -25,3 +25,7 @@
  .input-field .prefix.active {
    color: #000;
  }
+
+body {
+  font-size: 15px;
+}

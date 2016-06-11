@@ -12,45 +12,36 @@
 	<link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
+	<div class="container">
 
+		<div class="row center">
+			<h1 class="header center cyan-text">Wikipedia Viewer</h1>
+			<h5 class="header col s12 light">What are you curious about today?</h5>
+		</div>
 
-	<div class="section no-pad-bot" id="index-banner">
-    <div class="container">
+	<div class="row center">
+		<div class="row">
+			<i class="material-icons">mode_edit</i>
+			<input type="text" id="searchTerm" class="formControl input-field col s10 m8 l8 offset-s1 offset-m2 offset-l2" placeholder="Curiouser and curiouser!"/>
+			<br />
+		</div>
+		<div class="row">
+			<button id="search" type="button" class="btn-large waves-effect waves-light indigo lighten-2">
+				<i class="material-icons left">search</i>Search it!
+			</button>
 
-      <h1 class="header center cyan-text">Wikipedia Viewer</h1>
+			<button type="button" class="btn-large waves-effect waves-light cyan lighten-2" type="button" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')" />
+				<i class="material-icons left">stars</i>Randomize!
+			</button>
+		</div>
+	</div>
 
-      <div class="row center">
-        <h5 class="header col s12 light">What are you curious about today?</h5>
-      </div>
-
-      <div class="row center">
-				<i class="material-icons prefix">mode_edit</i>
-				<input type="text" id="searchTerm" class="formControl input-field col s12 m6 l4" /><br />
-
-				<button id="search" type="button" class="btn-large waves-effect waves-light indigo lighten-2">
-					<i class="material-icons left">search</i>Search it!</button>
-
-				<button class="btn-large waves-effect waves-light cyan lighten-2" type="button" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')" />
-					<i class="material-icons left">stars</i>Randomize!
-				</button>
+		<div class="row center">
+			<div class="col s12">
+				<div id="output"></div>
 			</div>
-
-			<div class="row center">
-        <div class="col s12">
-
-								<div id="output">
-								</div>
-        </div>
-      </div>
-
-
-
-
-
-      </div>
-  </div>
-
-
+		</div>
+	</div>
 
 	<!-- JQuery -->
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>

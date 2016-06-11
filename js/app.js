@@ -22,7 +22,7 @@ $(document).ready(function(){
           // console.log(url);
           $("#output").html("");
           for(var i=0; i<data[1].length; i++) {
-            $("#output").prepend("<div class='card'><div class='card-content'><li><a href= " + data[3][i] + ">" + "<span class='card-title'>" + data[1][i] + "</span>" + "</a><p>" + data[2][i] + "</p></li></div></div>");
+            $("#output").prepend("<div class='card'><div class='card-content'><ul><li><a href= " + data[3][i] + ">" + "<span class='card-title'>" + data[1][i] + "</span><i class='small material-icons'>open_in_new</i>" + "</a><p>" + data[2][i] + "</p></li></ul></div></div>");
           }
         },
         error: function(errorMessage){

@@ -14,25 +14,32 @@
 <body>
 
 
-	<div class="container">
-		<div class="section">
-			<div class="row">
-				<div class="grid-example col s12 m6"><span class="flow-text">I am full-width on mobile (col s12 m6)</span></div>
-			</div>
-		</div>
-	</div>
+	<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Wikipedia Viewer</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">What are you curious about today?</h5>
+      </div>
+      <div class="row center">
+				<!-- <label for="formControl">What are you curious about today?</label><br /> -->
+				<input type="text" id="searchTerm" class="formControl" />
 
-<h1>Wikipedia Viewer</h1>
-	<label for="formControl">What are you curious about today?</label><br />
-	<input type="text" id="searchTerm" class="formControl" />
+				<button id="search" type="button" class="btn-large waves-effect waves-light blue"><i class="material-icons left">search</i>Search it!</button>
 
-	<button id="search" type="button">Search it!</button>
+				<button type="button" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')" class="btn-large waves-effect waves-light orange" />
+					<i class="material-icons left">stars</i>Randomize!
+				</button>
 
-	<input type="button" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')" value="Surprise me!" />
+				<ul id="output">
 
-	<ul id="output">
+				</ul>
 
-	</ul>
+      </div>
+    </div>
+  </div>
+
+
 
 	<!-- JQuery -->
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
